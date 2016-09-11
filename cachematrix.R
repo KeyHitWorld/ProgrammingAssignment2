@@ -3,8 +3,7 @@
 
 ## this function can cache a Matrix
 
-makeCacheMatrix <- function(x = matrix()) {
-        so <- NULL
+makeCacheMatrix <- function(x = matrix()) { so <- NULL
         set <- function(y) { ##set a Matrix
                 x <<- y
                 so <<- NULL
