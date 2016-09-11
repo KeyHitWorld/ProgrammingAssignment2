@@ -1,16 +1,15 @@
 ## The two functions can help you to caculate the inverse of Matrix
-## 
 
 ## this function can cache a Matrix
 
 makeCacheMatrix <- function(x = matrix())
 {
         so <- NULL
-        set <- function(y) { ##set a Matrix
+        set <- function(y) {   ##set a Matrix
                 x <<- y
                 so <<- NULL
         }
-        get <- function() x ## get a Matrix
+        get <- function() x   ## get a Matrix
         setsolve <- function(solve) so <<- solve  ## set the inverse of the Matrix
         getsolve <- function() so  ##get the inverse of the Matrix
         list(set = set, get = get,
